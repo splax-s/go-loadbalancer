@@ -86,9 +86,11 @@ func (b *LoadBalancer) GetNextPeer() *Server {
 
 func main() {
 	urls := []string{
+		"http://localhost:8000",
 		"http://localhost:3000",
-		"http://localhost:8081",
+		"http://localhost:8083",
 		"http://localhost:19000",
+		"http://80.248.2.227:8000",
 	}
 
 	servers := make([]*Server, len(urls))
